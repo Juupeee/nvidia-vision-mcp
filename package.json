@@ -1,0 +1,25 @@
+{
+  "name": "nvidia-vision-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for reading local images with NVIDIA vision models.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "nvidia-vision-mcp": "./src/server.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node --check src/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.0"
+  }
+}
